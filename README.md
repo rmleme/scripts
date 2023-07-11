@@ -9,6 +9,9 @@ A few useful bash scripts.
   - [github_clone_all_repos.sh](./git/github_clone_all_repos.sh): clones all repositories of a given GitHub user, page by page.
   - [merge_from_main_master.sh](./git/merge_from_main_master.sh): merges into your local [feature] branch the commit history from `main` (or `master`) branch.
   - [update_all_repos.sh](./git/update_all_repos.sh): sweeps accross all your local repositories pulling the latest (remote) changes from `main` (or `master`) branch.
+- [/jvm](./jvm)
+  - [spring](./jvm/spring)
+    - [generate_thread_dumps.sh](./jvm/spring/generate_thread_dumps.sh): generates a series of thread dumps from a Spring (Actuator) based application.
 - [/mysql](./mysql) --> requires [MySQL Client](https://dev.mysql.com/doc/refman/8.0/en/programs-client.html).
   - [dump_mysql_defs.sh](./mysql/dump_mysql_defs.sh): generates a dump file containing the definitions of a given MySQL database.
   - [restore_mysql_defs.sh](./mysql/restore_mysql_defs.sh): restores the definitions of a MySQL database from a given dump file.
