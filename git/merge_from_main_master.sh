@@ -8,9 +8,10 @@ fi
 eval "$(ssh-agent -s)"
 ssh-add $1
 
+cd $2
+
 BRANCH="$(git branch | grep -oP '\K(main|master)')"
 
-cd $2
 git checkout $BRANCH
 git fetch -p origin
 git merge origin/$BRANCH
